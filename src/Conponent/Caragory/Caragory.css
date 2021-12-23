@@ -1,0 +1,30 @@
+.backgroundC{
+    background-image: linear-gradient(to right,#bab0b5, #889ce5 , #805fc7 );
+}
+
+.backgroundD{
+    background-image: linear-gradient(to right,#eb6550, #ec2e08 , #eb6550 );
+}
+.backgroundE{
+    background-image: linear-gradient(to right,#bab0b5, #889ce5 , #805fc7 );
+}
+
+
+.zoom {
+    
+    padding: 1.8rem;
+    transition: transform 1s;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+  }
+  
+  .zoomDiv:hover img {
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.5); 
+  }
+
+@media only screen and (min-width: 600px) {
+    
+  }

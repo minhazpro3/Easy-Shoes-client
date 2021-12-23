@@ -1,23 +1,51 @@
-import logo from './logo.svg';
 import './App.css';
+import Home from './Conponent/Home/Home';
+
+import {
+  BrowserRouter,
+  Routes,
+  Route
+} from "react-router-dom";
+import AddProduct from './Conponent/AddProducts/AddProduct';
+import MyProduct from './Conponent/MyProducts/MyProduct';
+import Navigation from './Conponent/Navigation/Navigation';
+import Orders from './Conponent/Orders/Orders';
+import Login from './Conponent/Login/Login';
+import PlaceOrder from './Conponent/PlaceOrder/PlaceOrder';
+
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <BrowserRouter>
+      <Navigation></Navigation>
+      <Routes>
+        <Route path="/" element={<Home />}>
+
+        </Route>
+        <Route path="/home" element={<Home />}>
+
+        </Route>
+        <Route path="/login" element={<Login />}>
+
+        </Route>
+        <Route path="/addProduct" element={<AddProduct />}>
+
+        </Route>
+        <Route path="/placeOrder/:id" element={<PlaceOrder />}>
+
+        </Route>
+        
+        <Route path="/myProduct" element={<MyProduct />}>
+
+        </Route>
+        <Route path="/orders" element={<Orders />}>
+
+        </Route>
+      </Routes>
+      </BrowserRouter>
+      
     </div>
   );
 }

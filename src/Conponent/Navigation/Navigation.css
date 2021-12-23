@@ -1,0 +1,31 @@
+
+
+.align{
+    display: flex;
+}
+
+.between{
+    display: flex;
+    justify-content: space-between ;
+}
+
+@media screen and (max-width: 688px) {
+   .links{
+       display: grid;
+       grid-template-columns: repeat(1fr);
+   }
+   .img-user{
+       display: block;
+   }
+  .align{
+    display: grid;
+    grid-template-columns: repeat(1fr);
+  }
+  .mx-2{
+      margin-top: 10px;
+  }
+  .between{
+    display: block;
+    justify-content: space-between ;
+}
+   }

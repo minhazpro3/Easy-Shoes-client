@@ -1,0 +1,5 @@
+
+.clipStyle{
+-webkit-clip-path: polygon(35% 0, 100% 0%, 100% 100%, 0 100%);
+clip-path: polygon(35% 0, 100% 0%, 100% 100%, 0 100%);
+}

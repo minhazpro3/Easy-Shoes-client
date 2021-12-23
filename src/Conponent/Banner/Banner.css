@@ -1,0 +1,19 @@
+.buttons{
+    background-color: #3d8fed;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    
+}
+
+
+
+
+@media only screen and (min-width: 600px) {
+    .banner-h1 {
+      font-size: 4rem;
+    }
+    .banner-bg{
+        height: 450px;
+    }
+    
+  }
